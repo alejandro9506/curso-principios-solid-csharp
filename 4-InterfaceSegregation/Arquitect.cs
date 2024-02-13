@@ -1,8 +1,8 @@
 namespace InterfaceSegregation
 {
-    public class Tester : IWokTeamActivies, ITestActivities
+    public class Arquitect : IActivities
     {
-        public Tester()
+        public Arquitect()
         {
         }
 
@@ -12,6 +12,16 @@ namespace InterfaceSegregation
         }
 
         public void Comunicate()
+        {
+            throw new ArgumentException();
+        }
+
+        public void Design()
+        {
+            Console.WriteLine("I'm designing new futures");
+        }
+
+        public void Develop()
         {
             throw new ArgumentException();
         }
